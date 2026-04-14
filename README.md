@@ -7,13 +7,9 @@ Contiene una interfaz en Python se conecta al servidor mediante sockets, de la m
 Esta establece conexión con el servidor en el puerto definido. El usuario puede ingresar coordenadas, medienate los pipe, que generan la conexión entre ambos jugadores; el servidor procesa el ataque y responde con el resultado.
 #---- Esquemas del sistema ----
 
-Cliente 1 ───┐
-             ├── Servidor
-Cliente 2 ───┘
 # Procesos Server
-  Hijo 1       Hijo 2
-     |           |
-(Jugador 1) (Jugador 2)
+  Hijo 1 ───►(Jugador 1)  Hijo 2 ───► (Jugador 2)
+  
 # Comunicación con pipes
 Hijo 1 ───► pipe ───► Hijo 2
 Hijo 2 ───► pipe ───► Hijo 1
