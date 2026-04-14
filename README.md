@@ -5,7 +5,8 @@ Cada jugador se conecta como cliente al servidor, el cual crea un proceso indepe
 
 Contiene una interfaz en Python se conecta al servidor mediante sockets, de la misma forma que el cliente en C.
 Esta establece conexión con el servidor en el puerto definido. El usuario puede ingresar coordenadas, medienate los pipe, que generan la conexión entre ambos jugadores; el servidor procesa el ataque y responde con el resultado.
-#---- Esquemas del sistema ----
+
+# ---- Esquemas del sistema ----
 
 # Procesos Server
   Hijo 1 ───►(Jugador 1)  Hijo 2 ───► (Jugador 2)
