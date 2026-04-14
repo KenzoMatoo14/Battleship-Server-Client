@@ -1,5 +1,4 @@
-# ==================================== Battleship ====================================
-# =================================== Server-Client ====================================
+# BATTLESHIP Server-Client
 Este videojuego esta implementado en lenguaje C utilizando una arquitectura Cliente-Servidor.
 El servidor gestiona la lógica del juego, la autenticación de usuarios y la comunicación entre dos jugadores conectados mediante sockets.
 Cada jugador se conecta como cliente al servidor, el cual crea un proceso independiente (fork) para atender a cada uno. La comunicación entre jugadores se realiza mediante pipes, permitiendo el intercambio de ataques y resultados en tiempo real.
@@ -12,10 +11,8 @@ Cliente 1 ───┐
              ├── Servidor
 Cliente 2 ───┘
 # Procesos Server
-           │
-     ┌─────┴─────┐
-     │           │
-  Hijo 1      Hijo 2
+  Hijo 1       Hijo 2
+     |           |
 (Jugador 1) (Jugador 2)
 # Comunicación con pipes
 Hijo 1 ───► pipe ───► Hijo 2
