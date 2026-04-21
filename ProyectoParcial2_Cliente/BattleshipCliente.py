@@ -6,7 +6,7 @@ from tkinter import font as tkfont
 import time
 import math
 
-PUERTO = 5002
+PUERTO = 5000
 
 # ─── Paleta ───────────────────────────────────────────────────────────────────
 BG_DARK      = "#050e0e"
